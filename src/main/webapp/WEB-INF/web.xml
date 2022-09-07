@@ -4,9 +4,15 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
          https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
+    <!-- Prime FACES -->
     <context-param>
         <param-name>primefaces.THEME</param-name>
-        <param-value>nova-light</param-value>
+        <param-value>nova-dark</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>primefaces.DIR</param-name>
+        <param-value>rtl</param-value>
     </context-param>
     <context-param>
         <param-name>
@@ -14,6 +20,7 @@
         </param-name>
         <param-value>true</param-value>
     </context-param>
+
     <welcome-file-list>
         <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>

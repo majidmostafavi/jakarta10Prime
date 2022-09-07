@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>
+        <ui:insert name="titleMenu">
+            <ui:include src="title.xhtml" />
+        </ui:insert>
+    </title>
+</h:head>
+<h:body>
+
+
+    <div class="nejatMain">
+        <div>
+            <ui:insert name="header">
+                <ui:include src="header.xhtml" />
+            </ui:insert>
+        </div>
+
+        <nav class="nejatNav">
+            <ui:insert name="topMenu">
+                <ui:include src="topMenu.xhtml" />
+            </ui:insert>
+        </nav>
+
+        <section class="nejatContent">
+            <ui:insert name="content">
+
+            </ui:insert>
+        </section>
+
+        <section class="documentContent">
+            <ui:insert name="documentContent">
+
+            </ui:insert>
+        </section>
+
+
+        <section>
+            <ui:insert name="nejatFooter">
+                <ui:include src="footer.xhtml" />
+            </ui:insert>
+        </section>
+    </div>
+</h:body>
+</html>
+
