@@ -20,8 +20,7 @@
         </param-name>
         <param-value>true</param-value>
     </context-param>
-
     <welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>home.xhtml</welcome-file>
     </welcome-file-list>
 </web-app>
