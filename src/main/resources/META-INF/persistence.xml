@@ -3,7 +3,21 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
-    <persistence-unit name="default">
-
+    <persistence-unit name="coeliac" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:/jboss/datasources/nejatDS</jta-data-source>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <!-- Properties for Hibernate-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
+            <property name="hibernate.default_schema" value="NEJAT"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.cache.use_second_level_cache" value="true" />
+            <!--        <property name="hibernate.hbm2ddl.auto" value="update"/>-->
+            <property name="hibernate.cache.use_query_cache" value="true"/>
+            <property name="hibernate.jdbc.batch_size" value="100"/>
+            <property name="wildfly.jpa.default-unit" value="true"/>
+        </properties>
     </persistence-unit>
 </persistence>

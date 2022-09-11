@@ -15,6 +15,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.source>17</maven.compiler.source>
         <junit.version>5.8.2</junit.version>
+        <hibernate.version>5.6.10.Final</hibernate.version>
     </properties>
 
     <dependencies>
@@ -52,6 +53,21 @@
             <artifactId>primefaces</artifactId>
             <version>11.0.0</version>
             <classifier>jakarta</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core-jakarta</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-jpamodelgen-jakarta</artifactId>
+            <version>5.6.10.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>7.0.1.Final</version>
         </dependency>
     </dependencies>
 
